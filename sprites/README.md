@@ -1,0 +1,1 @@
+All sprites, spritesheets, tilesheets, etc. are placed either in this or the nested folders.
