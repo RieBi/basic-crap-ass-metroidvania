@@ -33,7 +33,7 @@ Some fun/immersive story/dialogues are played throughout the game (the beginning
 ## Development Software
 - Godot as the main engine
 - Aseprite (Libresprite) for making pixel art
-- *placeholder* for making music and sounds
+- Ableton Live for making music and sounds
 
 ## Theme Interpretation
 So the player is technically a sword and the game incentivizes it to quickly get into the battle and kill all the enemies in a bout of rage. You kill. You wreak havoc. You destroy.
@@ -58,4 +58,4 @@ Discord is also used in the development process as a communication tool.
 - Programmer: *placeholder*
 - Artist: *placeholder*
 - Artist, Designer: *placeholder*
-- Composer: *placeholder*
+- Composer: Naessala
