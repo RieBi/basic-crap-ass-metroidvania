@@ -54,8 +54,8 @@ Discord is also used in the development process as a communication tool.
 
 ## Development Team
 
-Lead, Programer: RieBi
-Programmer: *placeholder*
-Artist: *placeholder*
-Artist, Designer: *placeholder*
-Composer: *placeholder*
+- Lead, Programer: RieBi
+- Programmer: *placeholder*
+- Artist: *placeholder*
+- Artist, Designer: *placeholder*
+- Composer: *placeholder*
