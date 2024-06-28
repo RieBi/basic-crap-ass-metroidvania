@@ -1,0 +1,95 @@
+[gd_scene load_steps=21 format=3 uid="uid://ceox67u0gndh8"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_brruh"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_hrpns"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_on4xw"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_0vdhb"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_pgbc4"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_30gom"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_vt4s4"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_uth0d"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uib8e"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3x4o5"]
+advance_mode = 2
+advance_condition = &"Is Walking"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ffula"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y80vj"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0h0en"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wqxwr"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_st72a"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sjjho"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3kkeo"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sx72q"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ccqfw"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_rgsva"]
+"states/Can someone else do the state machine conditions?/node" = SubResource("AnimationNodeBlendSpace2D_hrpns")
+"states/Can someone else do the state machine conditions?/position" = Vector2(789.334, 168.666)
+"states/Code for it is already done/node" = SubResource("AnimationNodeBlendSpace2D_on4xw")
+"states/Code for it is already done/position" = Vector2(790.667, 205.916)
+states/End/position = Vector2(929.333, 98.963)
+states/Fall/node = SubResource("AnimationNodeBlendSpace2D_0vdhb")
+states/Fall/position = Vector2(422.815, 250)
+states/Idle/node = SubResource("AnimationNodeBlendSpace2D_pgbc4")
+states/Idle/position = Vector2(318.222, 98.8889)
+states/Jump/node = SubResource("AnimationNodeBlendSpace2D_30gom")
+states/Jump/position = Vector2(424, 156.667)
+states/Land/node = SubResource("AnimationNodeBlendSpace2D_vt4s4")
+states/Land/position = Vector2(423.358, 324.667)
+states/Walk/node = SubResource("AnimationNodeBlendSpace2D_uth0d")
+states/Walk/position = Vector2(552, 108.222)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_uib8e"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_3x4o5"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_ffula"), "Idle", "Jump", SubResource("AnimationNodeStateMachineTransition_y80vj"), "Walk", "Jump", SubResource("AnimationNodeStateMachineTransition_0h0en"), "Jump", "Fall", SubResource("AnimationNodeStateMachineTransition_wqxwr"), "Idle", "Fall", SubResource("AnimationNodeStateMachineTransition_st72a"), "Walk", "Fall", SubResource("AnimationNodeStateMachineTransition_sjjho"), "Fall", "Land", SubResource("AnimationNodeStateMachineTransition_3kkeo"), "Land", "Walk", SubResource("AnimationNodeStateMachineTransition_sx72q"), "Land", "Idle", SubResource("AnimationNodeStateMachineTransition_ccqfw")]
+graph_offset = Vector2(0, 54.5822)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_brruh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_rgsva")
+anim_player = NodePath("../AnimationPlayer")
+"parameters/conditions/Is Walking" = false
+"parameters/Can someone else do the state machine conditions?/blend_position" = Vector2(-0.714617, -0.805755)
+"parameters/Code for it is already done/blend_position" = Vector2(0, 0)
+parameters/Fall/blend_position = Vector2(0, 0)
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Jump/blend_position = Vector2(0, 0)
+parameters/Land/blend_position = Vector2(0, 0)
+parameters/Walk/blend_position = Vector2(0, 0)
+
+[node name="_AnimationPlayer_18693" type="AnimationPlayer" parent="."]
+active = false
