@@ -7,7 +7,7 @@ Our basic prototype metroidvania made as a preparation for future big Pirate Sof
 *Theme: You are the weapon*
 
 ## Game Summary
-A 2D metroidvania set in a dark medieval dungeon where the player goes through several areas, with the final one containing holy grail protected by the final boos, Dragon. At end of each area there's a miniboss. Distinct levels of each area contain puzzles and enemies you have to defeat, with the core of gameplay being that you have several different bodies that you can change and they let you solve different puzzles and get to different areas.
+A 2D metroidvania set in a dark medieval dungeon where the player goes through several areas, with the final one containing holy grail protected by the final boss, Dragon. At end of each area there's a miniboss. Distinct levels of each area contain puzzles and enemies you have to defeat, with the core of gameplay being that you have several different bodies that you can change and they let you solve different puzzles and get to different areas.
 
 ## Inspiration
 Partly inspired by Dungeons & Dragons
@@ -20,7 +20,7 @@ Partly inspired by League of Legends darking that they are weapons which can inh
 ## Player Experience
 The player is actually a sword but can change its appearance, abilities, etc. based on the body it currently occupies. To surpass the levels, depending on the level, you use different abilities to kill the enemies and solve puzzles.
 
-One of the main concepts is that player has only melee attack, why enemies often shoot projectiles, so player will need to avoid them and get close to the enemies to kill them. Upon killing enemies player receives life essences which can be spent in a merchant shop near the end of an area.
+One of the main concepts is that player has only melee attack, why enemies often shoot projectiles, so player will need to avoid them and get close to the enemies to kill them. Upon killing enemies player receives life essence which can be spent in a merchant shop near the end of an area.
 
 Some fun/immersive story/dialogues are played throughout the game (the beginning, between areas, end, maybe some texts in the dungeon).
 
