@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch22h2yhaplas"]
+
+[ext_resource type="Script" path="res://components/component_humanoid_playable.gd" id="1_e5pjf"]
+
+[node name="ComponentHumanoidPlayable" type="Node"]
+script = ExtResource("1_e5pjf")

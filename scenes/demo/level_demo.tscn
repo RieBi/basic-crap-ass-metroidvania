@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dswjgrkwkke21"]
+
+[ext_resource type="PackedScene" uid="uid://cfnfkcff7pjuv" path="res://components/component_level_camera.tscn" id="2_d2xdg"]
+[ext_resource type="TileSet" uid="uid://cntl3uj4rfgxr" path="res://assets/demo/demo_tile_set.tres" id="2_ije2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272kj"]
+size = Vector2(1280, 720)
+
+[node name="LevelDemo" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_ije2s")
+format = 2
+layer_0/tile_data = PackedInt32Array(458753, 2, 1, 458754, 2, 1, 458755, 65538, 0, 458756, 2, 0, 458757, 2, 0, 458758, 2, 1, 458759, 2, 1, 458760, 65538, 1, 458761, 2, 0, 458762, 65538, 1, 458763, 65538, 1, 458764, 2, 1, 458765, 2, 1, 458766, 2, 0, 458767, 65538, 1, 458752, 65538, 1, 458768, 2, 0, 458769, 65538, 0, 458770, 65538, 0, 458771, 65538, 0, 458772, 2, 0, 458773, 2, 1, 458774, 2, 1, 458775, 65538, 0, 458776, 65538, 0, 458777, 2, 1, 458778, 65538, 0, 458779, 2, 0, 458780, 65538, 1, 458781, 2, 0, 458782, 65538, 1, 458783, 65538, 1, 458784, 2, 1, 458785, 65538, 0, 458786, 65538, 1, 458787, 65538, 1, 524323, 65538, 1, 524324, 65538, 0, 589860, 2, 1, 589861, 65538, 1, 655397, 65538, 0, 655398, 65538, 1, 655399, 2, 0, 720935, 2, 0)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(640, 360)
+shape = SubResource("RectangleShape2D_272kj")
+
+[node name="ComponentLevelCamera" parent="." node_paths=PackedStringArray("level_area") instance=ExtResource("2_d2xdg")]
+level_area = NodePath("../Area2D")

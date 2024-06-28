@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtcbukmc7qaql"
-path="res://.godot/imported/icon.svg-0914b99cf533108da134aeca7ec5840a.ctex"
+uid="uid://drx6j1tu6t0qg"
+path="res://.godot/imported/demo_tile_sheet.png-da1db4afd8490e543b8f1b819dfdeeda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://templates/BCAPM/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-0914b99cf533108da134aeca7ec5840a.ctex"]
+source_file="res://assets/demo/demo_tile_sheet.png"
+dest_files=["res://.godot/imported/demo_tile_sheet.png-da1db4afd8490e543b8f1b819dfdeeda.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

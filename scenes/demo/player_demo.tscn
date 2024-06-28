@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkt0dsaqw5tew"]
+
+[ext_resource type="PackedScene" uid="uid://ch22h2yhaplas" path="res://components/component_humanoid_playable.tscn" id="1_jllop"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_edlmt"]
+size = Vector2(32, 88)
+
+[node name="PlayerDemo" type="CharacterBody2D" groups=["player"]]
+position = Vector2(-16, -48)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 32.0
+offset_bottom = 88.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 44)
+shape = SubResource("RectangleShape2D_edlmt")
+
+[node name="ComponentHumanoidPlayable" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_jllop")]
+player = NodePath("..")

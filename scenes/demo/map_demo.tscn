@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://it2xd2nedmbp"]
+
+[ext_resource type="PackedScene" uid="uid://dkt0dsaqw5tew" path="res://scenes/demo/player_demo.tscn" id="1_2js4o"]
+[ext_resource type="PackedScene" uid="uid://dswjgrkwkke21" path="res://scenes/demo/level_demo.tscn" id="1_qwq2q"]
+[ext_resource type="PackedScene" uid="uid://16ej5akw3ppe" path="res://scenes/demo/level_demo_2.tscn" id="3_66yed"]
+
+[node name="MapDemo" type="Node2D"]
+
+[node name="PlayerDemo" parent="." instance=ExtResource("1_2js4o")]
+position = Vector2(528, 96)
+
+[node name="LevelDemo" parent="." instance=ExtResource("1_qwq2q")]
+
+[node name="LevelDemo2" parent="." instance=ExtResource("1_qwq2q")]
+position = Vector2(1280, 96)
+
+[node name="Camera2D" type="Camera2D" parent="." groups=["main_camera"]]
+anchor_mode = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="level_demo_2" parent="." instance=ExtResource("3_66yed")]
+position = Vector2(-1280, -168)
